@@ -11,7 +11,7 @@ const Header = () => {
   }
     return (
         <div className="header">
-            
+            <h1> testing </h1>
             <img src='https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/shopping-online.jpg'>
             </img>
             <button onClick={cartShow}>{cart}</button>

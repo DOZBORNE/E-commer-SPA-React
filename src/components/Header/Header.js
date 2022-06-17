@@ -13,7 +13,7 @@ const Header = () => {
         <div className="header">
             <img src='https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/shopping-online.jpg'>
             </img>
-            <span class="button_badge">*</span>
+            {/* <span class="button_badge">*</span> */}
             <button onClick={cartShow}>{cart}</button>
         </div>
     );

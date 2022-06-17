@@ -43,7 +43,7 @@
   padding: 1px 3px;
   font-size: 10px;
   
-  position: absolute; /* Position the badge within the relatively positioned button */
+  position: relative; /* Position the badge within the relatively positioned button */
   top: 0.5rem;
   left: 2.9rem;
   cursor: pointer;

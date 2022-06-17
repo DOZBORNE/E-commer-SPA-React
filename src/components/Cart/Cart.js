@@ -50,7 +50,7 @@ const Cart = (props) => {
                     <h4>Sub-total = ৳{total.toFixed(2)}</h4> 
                     <h4>Delivery Charge = ৳100 </h4> 
                     <hr></hr>
-                    <h4><b>Grand-total = ৳{total.toFixed(2)+100}</b></h4> 
+                    <h4><b>Grand-total = ৳{parseFloat(total.toFixed(2))+100}</b></h4> 
                     <button id="checkOutBtn" onClick={openModal}>Proceed To Check Out</button>
 
                     <div id="myModal" className="modal">

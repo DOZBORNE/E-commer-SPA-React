@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Product.css'
-// import InnerHTML from 'dangerously-set-html-content'
 
 
 const Product = (props) => {

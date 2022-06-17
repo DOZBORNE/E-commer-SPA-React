@@ -14,7 +14,7 @@ const CartProduct = (props) => {
             </div>
             <div>
                 <p>{title}</p>
-                <p><small>৳parseFloat({price}) X parseFloat({count}) = ৳{cost}</small></p>
+                <p><small>৳{price} X {count} = ৳{cost}</small></p>
             </div> 
         </div>
       

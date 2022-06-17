@@ -1,83 +1,81 @@
-.product{
-  background-image: linear-gradient(rgb(121, 0, 0,0.4), black);
-  padding: 10px 10px;
-  margin: 10px;
-  color: rgba(255, 255, 255, 0.849);
-  border-radius: 5px;
-  text-align: left;
-  height: 350px;
-  position: relative;
-  cursor: pointer;
-
+.product {
+    background-image: linear-gradient(rgb(121, 0, 0, 0.4), black);
+    padding: 10px 10px;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.849);
+    border-radius: 5px;
+    text-align: left;
+    height: 350px;
+    position: relative;
+    cursor: pointer;
 }
-.product:hover{
-  background-image: linear-gradient(rgb(121, 0, 0,0.7), black);
-  border-radius: 5px;
-  transform: scale(1.1);
-  transition-duration: .7s ;
+.product .details {
 }
-.product img{
-  display: block;
-  border-radius: 5px;
-  margin: auto;
-  block-size: 40%;
-  width: 100%;
+.product:hover {
+    background-image: linear-gradient(rgb(121, 0, 0, 0.7), black);
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition-duration: 0.7s;
 }
-.artBtn{
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.849);
-  border: none;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  padding: 5px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: inherit;
-  cursor: pointer;
-
+.product img {
+    border-radius: 5px;
+    margin: auto;
+    max-height: 200px;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.cardFooter{
-  height: 12%;
-  width: 99%;
+.artBtn {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: inherit;
+    cursor: pointer;
 }
 
-
-.counter{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: rgba(255,255, 255);
-  padding: 2px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  height: inherit;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width:inherit ;
-  justify-items: center;
-  align-items: center;
-  
-
-}
-.counter button{
-  border: none;
-  border-radius: 50px;
-  font-size: 30px;
-  width: 2.5rem;
-  cursor: pointer;
-  height: 2.5rem;
-
-}
-.counter p{
-  margin: 0;
-  text-align: center;
-  color: black;
+.cardFooter {
+    height: 12%;
+    width: 99%;
 }
 
-.price{
-  position: absolute;
-  bottom: 2rem;
-  left: 0rem;
+.counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(255, 255, 255);
+    padding: 2px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: inherit;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: inherit;
+    justify-items: center;
+    align-items: center;
+}
+.counter button {
+    border: none;
+    border-radius: 50px;
+    font-size: 30px;
+    width: 2.5rem;
+    cursor: pointer;
+    height: 2.5rem;
+}
+.counter p {
+    margin: 0;
+    text-align: center;
+    color: black;
+}
+
+.price {
+    position: absolute;
+    bottom: 2rem;
+    left: 0rem;
 }

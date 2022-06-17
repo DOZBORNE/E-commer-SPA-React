@@ -20,8 +20,10 @@ const Product = (props) => {
 
   return (
     <div className="product">
-      <img src={image} alt="" />
-      <h3>{title.substring(0, 50)}</h3>
+      <div className='details'>
+        <img src={image} alt="" />
+        <h3>{title.substring(0, 50)}</h3>
+      </div>
       <h5 className='price'>৳{price}</h5>
 
       <div className='cardFooter'>

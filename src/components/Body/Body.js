@@ -15,7 +15,7 @@ const Body = () => {
         if(cart.some(data => data.title === product.title)){
             product.count++;
             product.cost = product.price*product.count;
-            let newCart= cart.filter(data=> data.title != product.title);
+            let newCart= cart.filter(data=> data.title !== product.title);
             newCart = [...newCart, product];
             setCart(newCart);
 
@@ -32,13 +32,13 @@ const Body = () => {
     const handleRemoveProduct = (product) => {
         if(cart.some(data => data.title === product.title)){
             if(product.count===1){
-                let newCart= cart.filter(data=> data.title != product.title);
+                let newCart= cart.filter(data=> data.title !== product.title);
                 setCart(newCart);
             }
             else{
                 product.count--;
                 product.cost= product.cost - (product.price*product.count);
-                let newCart= cart.filter(data=> data.title != product.title);
+                let newCart= cart.filter(data=> data.title !== product.title);
                 newCart = [...newCart, product];
                 setCart(newCart);
             }
@@ -47,7 +47,7 @@ const Body = () => {
     }
     const removeItem = (product) => {
         product.count=0;
-        let newCart= cart.filter(data=> data.title != product.title)
+        let newCart= cart.filter(data=> data.title !== product.title)
         setCart(newCart);
         document.getElementById("counter").style.display="none"
         document.getElementById("addToCart").style.display="block !important";

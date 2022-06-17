@@ -1,0 +1,112 @@
+.header{
+  background-color: brown;
+  color: rgba(255, 255, 255, 0.849);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 2.5rem;
+  z-index: 1;
+  /* border-radius: 15px; */
+}
+
+.header h2{
+  font-family:fantasy;
+  font-size: 40px;
+}
+.header button{
+  align-items: center;
+  text-align: center;
+  border-radius: 50px  ;
+  border: none;
+  padding: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+
+}
+
+.header img{
+  width: 6rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+  margin-top: -0.25rem;
+  cursor: pointer;
+}
+.button_badge {
+  background-color: #fa3e3e;
+  border-radius: 2px;
+  color: white;
+ 
+  padding: 1px 3px;
+  font-size: 10px;
+  
+  position: absolute; /* Position the badge within the relatively positioned button */
+  top: 0.5rem;
+  left: 2.9rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width:100px) and (max-width: 360px) {
+
+  .header button{
+    left: 75%;
+    top: 980%;
+  }
+}
+
+@media screen and (min-width:361px) and (max-width: 380px) {
+
+  .header button{
+    left: 75%;
+    top: 980%;
+  }
+}
+@media screen and (min-width:381px) and (max-width: 480px) {
+
+  .header button{
+    left: 75%;
+    top: 1220%;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width: 640px) {
+
+  .header button{
+    left: 75%;
+    top: 1080%;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+@media screen and (min-width:641px) and (max-width: 768px) {
+
+  .header button{
+    left: 80%;
+    top: 1450%;
+    height: 4rem;
+    width: 4rem;
+  }
+}
+@media screen and (min-width:769px) and (max-width: 961px) {
+
+  .header button{
+    left: 80%;
+    top: 1650%;
+    height: 5rem;
+    width: 5rem;
+  }
+}
+@media screen and (min-width:961px) and (max-width: 1080px) {
+
+  .header button{
+    left: 80%;
+    top: 850%;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}

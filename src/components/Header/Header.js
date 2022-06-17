@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' ;
 import { faShoppingCart} from '@fortawesome/free-solid-svg-icons';
@@ -13,6 +13,7 @@ const Header = () => {
         <div className="header">
             <img src='https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/shopping-online.jpg'>
             </img>
+            <span class="button_badge">*</span>
             <button onClick={cartShow}>{cart}</button>
         </div>
     );
